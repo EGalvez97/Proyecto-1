@@ -41,34 +41,39 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(263, 335);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(248, 339);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
+            this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(263, 450);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(230, 456);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Contraseña";
             // 
             // btn_Iniciar
             // 
+            this.btn_Iniciar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Iniciar.Location = new System.Drawing.Point(173, 575);
             this.btn_Iniciar.Name = "btn_Iniciar";
             this.btn_Iniciar.Size = new System.Drawing.Size(108, 42);
             this.btn_Iniciar.TabIndex = 2;
-            this.btn_Iniciar.Text = "button1";
+            this.btn_Iniciar.Text = "Iniciar";
             this.btn_Iniciar.UseVisualStyleBackColor = true;
             this.btn_Iniciar.Click += new System.EventHandler(this.btn_Iniciar_Click);
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_Cancelar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Cancelar.Location = new System.Drawing.Point(296, 575);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(108, 42);
@@ -92,6 +97,7 @@
             this.txt_Contraseña.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Contraseña.Location = new System.Drawing.Point(173, 501);
             this.txt_Contraseña.Name = "txt_Contraseña";
+            this.txt_Contraseña.PasswordChar = '*';
             this.txt_Contraseña.Size = new System.Drawing.Size(231, 22);
             this.txt_Contraseña.TabIndex = 5;
             // 

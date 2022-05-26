@@ -41,13 +41,15 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackColor = System.Drawing.Color.Gold;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
@@ -112,7 +114,7 @@
             this.textBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(317, 139);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 41);
+            this.textBox1.Size = new System.Drawing.Size(390, 41);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
@@ -121,7 +123,7 @@
             this.textBox2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox2.Location = new System.Drawing.Point(317, 227);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 41);
+            this.textBox2.Size = new System.Drawing.Size(390, 41);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
@@ -130,7 +132,7 @@
             this.textBox3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(317, 299);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 41);
+            this.textBox3.Size = new System.Drawing.Size(390, 41);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
@@ -139,19 +141,29 @@
             this.textBox4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox4.Location = new System.Drawing.Point(317, 370);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(246, 41);
+            this.textBox4.Size = new System.Drawing.Size(390, 41);
             this.textBox4.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 30.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.BackColor = System.Drawing.Color.Gold;
+            this.label5.Font = new System.Drawing.Font("Bookman Old Style", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(68, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(258, 47);
+            this.label5.Size = new System.Drawing.Size(257, 46);
             this.label5.TabIndex = 9;
             this.label5.Text = "Certificados";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(337, 73);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // Certificado
             // 
@@ -171,11 +183,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "Certificado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Certificado";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +208,6 @@
         private TextBox textBox3;
         private TextBox textBox4;
         private Label label5;
+        private PictureBox pictureBox2;
     }
 }

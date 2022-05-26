@@ -37,5 +37,12 @@ namespace Proyecto
         {
             //esta es la textbox :v
         }
+
+        private void pb_RegresarMenu_Click(object sender, EventArgs e)
+        {
+            Menu menu=new Menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

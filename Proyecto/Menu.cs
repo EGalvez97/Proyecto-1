@@ -28,5 +28,12 @@ namespace Proyecto
         {
             Application.Exit();
         }
+
+        private void pb_HistorialAcademico_Click(object sender, EventArgs e)
+        {
+            HistorialAcademico historialAcademico = new HistorialAcademico();
+            historialAcademico.Show();
+            this.Close();
+        }
     }
 }
