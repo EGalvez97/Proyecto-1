@@ -16,5 +16,17 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void pb_Certificado_Click(object sender, EventArgs e)
+        {
+            Certificado certificado = new Certificado();
+            certificado.Show();
+            this.Close();
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
