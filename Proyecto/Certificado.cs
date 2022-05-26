@@ -46,9 +46,9 @@ namespace Proyecto
         }
         private void Imprimir(object sender, PrintPageEventArgs e)
         {
-            Font font = new Font("Verdana", 30, FontStyle.Regular, GraphicsUnit.Point);
+            Font font = new Font("Verdana", 30, FontStyle.Bold, GraphicsUnit.Point);
             Font font2 = new Font("Verdana", 16, FontStyle.Regular, GraphicsUnit.Point);
-            Font font3 = new Font("Verdana", 16, FontStyle.Regular, GraphicsUnit.Point);
+            Font font3 = new Font("Verdana", 16, FontStyle.Bold, GraphicsUnit.Point);
 
             int y = 20;
 
@@ -56,14 +56,14 @@ namespace Proyecto
             e.Graphics.DrawString("-Secretaria de Educacion Publica y Cultura del Estado de Sinaloa ", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
             e.Graphics.DrawString("-Departamento de Registro y Certificacion Escolar ", font2, Brushes.Black, new RectangleF(0, y += 50, 900, 40));
             e.Graphics.DrawString("CERTIFICA QUE:", font2, Brushes.Black, new RectangleF(350, y += 80, 900, 40));
-            e.Graphics.DrawString(txtNombre.Text + " " + txtApellido.Text, font2, Brushes.Black, new RectangleF(200, y += 50, 900, 40));
+            e.Graphics.DrawString(txtNombre.Text + " " + txtApellido.Text, font3, Brushes.Black, new RectangleF(200, y += 50, 900, 40));
             e.Graphics.DrawString("-Con Clave Unica de Registro de Poblacion(CURP):", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
-            e.Graphics.DrawString(txtCurp.Text, font2, Brushes.Black, new RectangleF(300, y += 40, 900, 40));
+            e.Graphics.DrawString(txtCurp.Text, font3, Brushes.Black, new RectangleF(300, y += 40, 900, 40));
             e.Graphics.DrawString("-Acredito la Educacion:  Secundaria en el Periodo Escolar 2021-2022 ", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
             e.Graphics.DrawString("-Segun Constancias que Obran en el Archivo de Control Escolar.", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
-            e.Graphics.DrawString("-Promedio de Aprovechamietno          ["+txtPromedio.Text+"]", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
+            e.Graphics.DrawString("-Promedio de Aprovechamietno      ["+txtPromedio.Text+"]", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
             e.Graphics.DrawString("-EL Presente Documento de Certificacion Se Expide en:", font2, Brushes.Black, new RectangleF(0, y += 80, 900, 40));
-            e.Graphics.DrawString("CULIACAN, SINALOA", font2, Brushes.Black, new RectangleF(300, y += 40, 900, 40));
+            e.Graphics.DrawString("CULIACAN, SINALOA", font3, Brushes.Black, new RectangleF(300, y += 40, 900, 40));
             e.Graphics.DrawString("_______________________________", font2, Brushes.Black, new RectangleF(200, y +=120, 900, 40));
             e.Graphics.DrawString("Firma del Director del", font2, Brushes.Black, new RectangleF(300, y += 40, 900, 40));
             e.Graphics.DrawString("Instituto", font2, Brushes.Black, new RectangleF(350, y += 40, 900, 40));

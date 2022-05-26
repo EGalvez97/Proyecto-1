@@ -65,7 +65,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(130, 258);
+            this.label1.Location = new System.Drawing.Point(312, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 39);
             this.label1.TabIndex = 1;
@@ -77,7 +77,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(130, 332);
+            this.label2.Location = new System.Drawing.Point(312, 321);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 39);
             this.label2.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(130, 403);
+            this.label3.Location = new System.Drawing.Point(312, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 39);
             this.label3.TabIndex = 3;
@@ -101,17 +101,17 @@
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(130, 170);
+            this.label4.Location = new System.Drawing.Point(312, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 39);
+            this.label4.Size = new System.Drawing.Size(94, 39);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Curp";
+            this.label4.Text = "CURP";
             // 
             // txtCurp
             // 
             this.txtCurp.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtCurp.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCurp.Location = new System.Drawing.Point(316, 170);
+            this.txtCurp.Location = new System.Drawing.Point(498, 159);
             this.txtCurp.Name = "txtCurp";
             this.txtCurp.Size = new System.Drawing.Size(390, 41);
             this.txtCurp.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtNombre.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNombre.Location = new System.Drawing.Point(316, 258);
+            this.txtNombre.Location = new System.Drawing.Point(498, 247);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(390, 41);
             this.txtNombre.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             this.txtApellido.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtApellido.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtApellido.Location = new System.Drawing.Point(316, 332);
+            this.txtApellido.Location = new System.Drawing.Point(498, 321);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(390, 41);
             this.txtApellido.TabIndex = 7;
@@ -139,7 +139,7 @@
             // 
             this.txtPromedio.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtPromedio.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtPromedio.Location = new System.Drawing.Point(316, 401);
+            this.txtPromedio.Location = new System.Drawing.Point(498, 390);
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(390, 41);
             this.txtPromedio.TabIndex = 8;
@@ -171,7 +171,7 @@
             this.btnImprimir.BackgroundImage = global::Proyecto.Properties.Resources.impresora;
             this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImprimir.Location = new System.Drawing.Point(444, 500);
+            this.btnImprimir.Location = new System.Drawing.Point(548, 503);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(121, 118);
             this.btnImprimir.TabIndex = 11;
