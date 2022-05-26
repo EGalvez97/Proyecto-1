@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Certificado));
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCurp = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtPromedio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.printCertificado = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +65,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(131, 227);
+            this.label1.Location = new System.Drawing.Point(130, 258);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 39);
             this.label1.TabIndex = 1;
@@ -78,7 +77,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(131, 301);
+            this.label2.Location = new System.Drawing.Point(130, 332);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 39);
             this.label2.TabIndex = 2;
@@ -90,7 +89,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(131, 372);
+            this.label3.Location = new System.Drawing.Point(130, 403);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 39);
             this.label3.TabIndex = 3;
@@ -102,47 +101,48 @@
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(131, 139);
+            this.label4.Location = new System.Drawing.Point(130, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 39);
             this.label4.TabIndex = 4;
             this.label4.Text = "Curp";
             // 
-            // textBox1
+            // txtCurp
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(317, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(390, 41);
-            this.textBox1.TabIndex = 5;
+            this.txtCurp.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCurp.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCurp.Location = new System.Drawing.Point(316, 170);
+            this.txtCurp.Name = "txtCurp";
+            this.txtCurp.Size = new System.Drawing.Size(390, 41);
+            this.txtCurp.TabIndex = 5;
+            this.txtCurp.TextChanged += new System.EventHandler(this.txtCurp_TextChanged);
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(317, 227);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(390, 41);
-            this.textBox2.TabIndex = 6;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNombre.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNombre.Location = new System.Drawing.Point(316, 258);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(390, 41);
+            this.txtNombre.TabIndex = 6;
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(317, 299);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(390, 41);
-            this.textBox3.TabIndex = 7;
+            this.txtApellido.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtApellido.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtApellido.Location = new System.Drawing.Point(316, 332);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(390, 41);
+            this.txtApellido.TabIndex = 7;
             // 
-            // textBox4
+            // txtPromedio
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(317, 370);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(390, 41);
-            this.textBox4.TabIndex = 8;
+            this.txtPromedio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtPromedio.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPromedio.Location = new System.Drawing.Point(316, 401);
+            this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.Size = new System.Drawing.Size(390, 41);
+            this.txtPromedio.TabIndex = 8;
             // 
             // label5
             // 
@@ -165,6 +165,19 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnImprimir.BackgroundImage = global::Proyecto.Properties.Resources.impresora;
+            this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir.Location = new System.Drawing.Point(444, 500);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(121, 118);
+            this.btnImprimir.TabIndex = 11;
+            this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // Certificado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -173,11 +186,12 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondoCertificado;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPromedio);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCurp);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -187,7 +201,6 @@
             this.Name = "Certificado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Certificado";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -196,18 +209,18 @@
         }
 
         #endregion
-
-        private BindingSource bindingSource1;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtCurp;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
+        private TextBox txtPromedio;
         private Label label5;
         private PictureBox pictureBox2;
+        private Button btnImprimir;
+        private System.Drawing.Printing.PrintDocument printCertificado;
     }
 }
